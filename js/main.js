@@ -22,40 +22,46 @@ const edadPelicula = () => {
 
 const seleccionPelicula = (edad) => {
     if (edad <= 17){
-        let pelicula = parseInt(prompt("Estas son nuestras recomendaciones para menores: \n 1-DragonBall \n 2-OnePiece \n 3-Bakugan \n 4-Los Piratas Del Caribe \n \n ingresa el numero de la pelicula que deseas ver"));
+        let pelicula = prompt("Estas son nuestras recomendaciones para menores: \n 1-DragonBall \n 2-OnePiece \n 3-Bakugan \n 4-Los Piratas Del Caribe \n \n ingresa el numero de la pelicula que deseas ver");
+        while(pelicula === null || pelicula === ""){
+            pelicula = prompt("Estas son nuestras recomendaciones para menores: \n 1-DragonBall \n 2-OnePiece \n 3-Bakugan \n 4-Los Piratas Del Caribe \n \n ingresa el numero de la pelicula que deseas ver");
+        }
         switch (pelicula) {
-            case 1:
+            case "1":
                 alert("ingresaste DragonBall");
                 return "dragon ball";
 
-            case 2:
+            case "2":
                 alert("OnePiece");
                 return "one piece";
 
-            case 3:
+            case "3":
                 alert("ingresaste Bakugan");
                 return "bakugan";
 
-            case 4:
+            case "4":
                 alert("ingresaste Los Piratas Del Caribe");
                 return "los piratas del caribe";
         }
     }else if (edad >= 18){
-        let pelicula = parseInt(prompt("Estas son nuestras recomendaciones para mayores: \n 1-Baby Driver \n 2-Sangre, sudor y gloria \n 3-Terrifier \n 4-Anabelle \n \n ingresa el numero de  la pelicula que deseas ver"));
+        let pelicula = prompt("Estas son nuestras recomendaciones para mayores: \n 1-Baby Driver \n 2-Sangre, sudor y gloria \n 3-Terrifier \n 4-Anabelle \n \n ingresa el numero de  la pelicula que deseas ver");
+        while(pelicula === null || pelicula === ""){
+            pelicula = prompt("Estas son nuestras recomendaciones para mayores: \n 1-Baby Driver \n 2-Sangre, sudor y gloria \n 3-Terrifier \n 4-Anabelle \n \n ingresa el numero de  la pelicula que deseas ver");
+        }
         switch (pelicula) {
-            case 1:
+            case "1":
                 alert("ingresaste Baby Driver");
                 return "baby driver";
         
-            case 2:
+            case "2":
                 alert("ingresaste Sangre, sudor y gloria");
                 return "sangre, sudor y gloria";
 
-            case 3:
+            case "3":
                 alert("ingresaste Terrifier");
                 return "terrifier";
 
-            case 4:
+            case "4":
                 alert("ingresaste Anabelle");
                 return "anabelle";
         }
@@ -83,19 +89,18 @@ const precioPelicula = (pelicula) => {
 }
 
 const cobro = (nombre, pelicula, precio) => {
-    alert(`gracias por su compra ${nombre}, la pelicula que eligio es ${pelicula} y el costo de su entrada sera de ${precio} pesos`);
+        alert(`la pelicula que eligio es ${pelicula} y el costo de su entrada sera de ${precio} pesos`);
     let abonar = parseInt(prompt("con cuanto abonara?"));
     if(abonar > precio ){
         let resultado = abonar-precio;
-        alert(`su vuelto es ${resultado}`)
+        alert(`su vuelto es ${resultado}`);
     }else if(abonar < precio){
         alert("te pedimos disculpas pero tu presupuesto no es suficiente");
-    }else{
-        alert("gracias por su compra");
+        return false;
     }
-    alert("gracias por su visita, vuelva prontos.")
-    
-}
+    alert("gracias por su visita, vuelva prontos.");
+    }   
+
 
 let nombre = bienvenida()
 let edad = edadPelicula()
