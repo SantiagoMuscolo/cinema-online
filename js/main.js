@@ -14,6 +14,9 @@ const bienvenida = () => {
 
 const edadPelicula = () => {
     let ingresoEdad = parseInt(prompt("ingresa tu edad"));
+    while(ingresoEdad == " " ){
+        ingresoEdad = parseInt(prompt("ingresa tu edad"));
+    }
     return ingresoEdad;
 }
 
@@ -36,9 +39,6 @@ const seleccionPelicula = (edad) => {
             case 4:
                 alert("ingresaste Los Piratas Del Caribe");
                 return "los piratas del caribe";
-
-            default: alert("No ingresaste ningun dato valido");
-                break;
         }
     }else if (edad >= 18){
         let pelicula = parseInt(prompt("Estas son nuestras recomendaciones para mayores: \n 1-Baby Driver \n 2-Sangre, sudor y gloria \n 3-Terrifier \n 4-Anabelle \n \n ingresa el numero de  la pelicula que deseas ver"));
@@ -58,9 +58,6 @@ const seleccionPelicula = (edad) => {
             case 4:
                 alert("ingresaste Anabelle");
                 return "anabelle";
-
-            default: alert("No ingresaste ningun dato valido");
-                break;
         }
     }
 }
@@ -82,8 +79,6 @@ const precioPelicula = (pelicula) => {
         return 1000;
     }else if (pelicula === "anabelle"){
         return 1000;
-    }else{
-        alert("ingresa un dato valido");
     }
 }
 
