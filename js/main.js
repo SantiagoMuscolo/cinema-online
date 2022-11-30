@@ -13,9 +13,9 @@ const bienvenida = () => {
 }
 
 const edadPelicula = () => {
-    let ingresoEdad = parseInt(prompt("ingresa tu edad"));
-    while(ingresoEdad == " " ){
-        ingresoEdad = parseInt(prompt("ingresa tu edad"));
+    let ingresoEdad = prompt("ingresa tu edad");
+    while(ingresoEdad === ""){
+        ingresoEdad = prompt("ingresa tu edad");
     }
     return ingresoEdad;
 }
