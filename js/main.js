@@ -23,7 +23,7 @@ const edadPelicula = () => {
 const seleccionPelicula = (edad) => {
     if (edad <= 17){
         let pelicula = prompt("Estas son nuestras recomendaciones para menores: \n 1-DragonBall \n 2-OnePiece \n 3-Bakugan \n 4-Los Piratas Del Caribe \n \n ingresa el numero de la pelicula que deseas ver");
-        while(pelicula === null || pelicula === ""){
+        while(pelicula === null || pelicula === "" || pelicula < 0 || pelicula == 0 || pelicula > 4){
             pelicula = prompt("Estas son nuestras recomendaciones para menores: \n 1-DragonBall \n 2-OnePiece \n 3-Bakugan \n 4-Los Piratas Del Caribe \n \n ingresa el numero de la pelicula que deseas ver");
         }
         switch (pelicula) {
@@ -45,7 +45,7 @@ const seleccionPelicula = (edad) => {
         }
     }else if (edad >= 18){
         let pelicula = prompt("Estas son nuestras recomendaciones para mayores: \n 1-Baby Driver \n 2-Sangre, sudor y gloria \n 3-Terrifier \n 4-Anabelle \n \n ingresa el numero de  la pelicula que deseas ver");
-        while(pelicula === null || pelicula === ""){
+        while(pelicula === null || pelicula === "" || pelicula < 0 || pelicula == 0 || pelicula > 4){
             pelicula = prompt("Estas son nuestras recomendaciones para mayores: \n 1-Baby Driver \n 2-Sangre, sudor y gloria \n 3-Terrifier \n 4-Anabelle \n \n ingresa el numero de  la pelicula que deseas ver");
         }
         switch (pelicula) {
