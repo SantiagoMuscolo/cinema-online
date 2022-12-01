@@ -91,6 +91,9 @@ const precioPelicula = (pelicula) => {
 const cobro = (nombre, pelicula, precio) => {
         alert(`la pelicula que eligio es ${pelicula} y el costo de su entrada sera de ${precio} pesos`);
     let abonar = parseInt(prompt("con cuanto abonara?"));
+    while(isNaN(abonar) || abonar <= 0){
+        abonar = parseInt(prompt("con cuanto abonara?"));
+    }
     if(abonar > precio ){
         let resultado = abonar-precio;
         alert(`su vuelto es ${resultado}`);
