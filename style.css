@@ -67,3 +67,71 @@ main h2{
     padding-top: 5%;
     color: black;
 }
+
+#body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./imagenes/backgrounds/cyberpunk.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.registro{
+    background-color: black;
+    border-radius: 3%;
+    width: 40%;
+    height: 900px;
+    margin-left: 50%;
+}
+
+.inicioRegistro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15%;
+}
+
+.inicioRegistro a{
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.inicioRegistro img{
+    width:20%;
+}
+
+.formulario{
+    display: flex;
+    padding-left: 20%;
+}
+.formulario input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40%;
+    width: 250%;
+    height: 40px;
+}
+
+button{
+    margin-top: 10%;
+    width: 50%;
+    height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    background-color: yellow;
+    
+}
+
+button:hover{
+    box-shadow: 0px 5px 10px white;
+    cursor: pointer;
+}
+
+.registro p{
+    margin-top: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.registro p a{
+    color: yellow;
+}
