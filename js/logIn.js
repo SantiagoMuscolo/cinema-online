@@ -4,8 +4,10 @@ pass = document.querySelector(`#password`);
 p = document.querySelector(`#texto`)
 
 function inicioSesion(usuarios){
+    console.log(usuarios);
     let userFound = usuarios.find(usuario =>{
-        return usuario.nombre === user.value && usuario.pass === pass.value
+        console.log(usuario);
+        return usuario.usuario == user.value && usuario.password == pass.value
     });
     if(userFound){
         window.location.href = "../html/movies.html"

@@ -48,5 +48,3 @@ btnRegister.addEventListener(`click`, (e=>{
     guardarEnElStorage(usuarios);
     window.location.href = "../html/logIn.html"
 }))
-
-
