@@ -7,11 +7,12 @@ btnRegister = document.querySelector(`#button`);
 
 let usuarios;
 
-if(localStorage.getItem(`usuarios`)){
-    usuarios = JSON.parse(localStorage.getItem(`usuarios`));
-}else{
-    usuarios = [];
-}
+// if(localStorage.getItem(`usuarios`)){
+//     usuarios = JSON.parse(localStorage.getItem(`usuarios`));
+// }else{
+//     usuarios = [];
+// }
+localStorage.getItem(`usuarios`) ? usuarios = JSON.parse(localStorage.getItem(`usuarios`)) : usuarios = [];
 
 class usuario{
     constructor(nombre, usuario, email, password){
@@ -45,6 +46,7 @@ btnRegister.addEventListener(`click`, (e=>{
     console.log(nuevoUsuario);
     guardarUsuario(nuevoUsuario);
     guardarEnElStorage(usuarios);
+    window.location.href = "../html/logIn.html"
 }))
 
 

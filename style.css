@@ -135,3 +135,18 @@ button:hover{
 .registro p a{
     color: yellow;
 }
+
+#mainLogIn{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./imagenes/backgrounds/spiderman.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+span{
+    color: yellow;
+}
+
+.imagenesLogIn img{
+    padding-top: 1%;
+    width: 80px ;
+}
