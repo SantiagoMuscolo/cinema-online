@@ -3,6 +3,21 @@
     padding: 0;
     margin: 0;
 }
+.header{
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-header a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: .5rem;
+}
 
 body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.teahub.io/photos/full/102-1021869_cine-wallpaper.jpg);
@@ -62,7 +77,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5rem;
     background-color: yellow;
-    
+    margin-left: 25%;
 }
 
 #button:hover{
@@ -73,10 +88,16 @@ body{
 .registro p{
     margin-top: 5%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
 }
 
 .registro p a{
     color: yellow;
+    display: flex;
+    justify-content: center;
+    padding-left: 2%;
 }
 
 #mainLogIn{
@@ -87,20 +108,30 @@ body{
 
 span{
     color: yellow;
+    display: flex;
+    justify-content: center;
 }
 
 .imagenesLogIn img{
-    padding-top: 1%;
+    padding-top: 5%;
     width: 80px ;
+    margin-left: 15%;
 }
 
-.card img{
-    width: 200px
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem;
 }
-
-
 
 .cardContainer{
-    display: flex;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+.cardContainer :nth-child(8){
+    margin-top: .7rem;
+}
