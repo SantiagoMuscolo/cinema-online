@@ -10,7 +10,7 @@ function inicioSesion(usuarios){
         return usuario.usuario == user.value && usuario.password == pass.value
     });
     if(userFound){
-        window.location.href = "../html/movies.html"
+        window.location.href = "./movies.html"
     }else{
         p.innerText = `el usuario no a coincidido`
     }
