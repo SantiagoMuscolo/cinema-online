@@ -19,11 +19,11 @@
     padding: .5rem;
 }
 
-body{
+/* body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.teahub.io/photos/full/102-1021869_cine-wallpaper.jpg);
     background-size: cover;
     background-attachment: fixed;
-}
+} */
 
 
 #body{
@@ -134,4 +134,45 @@ span{
 
 .cardContainer :nth-child(8){
     margin-top: .7rem;
+}
+
+#cart{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cart img{
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorCart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.contenedorCart h5{
+margin-left: 2%;
+}
+
+.contenedorCart div{
+    margin-left: 5%;
+}
+.contenedorCart button{
+    margin-left: 10%;
+    border: none;
+}
+
+.finalizar{
+    margin-top: 5%;
 }
